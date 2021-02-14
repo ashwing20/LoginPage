@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="web">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="button"></div>
+                <button type="button" class="toggle-button"><b>Sign In</b></button>
+                <a href="UserRegistration.html">
+                    <button type="button" class="toggle-button">Register</button>
+                </a>
+            </div>
+
+
+
+            <form id="login" class="input-group" action="welcom.html">
+                <i class="fa fa-user"></i>
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <div class="p">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="input-field" id="password" placeholder="Password" required>
+                    <i class="far fa-eye" id="togglePassword"></i>
+                </div>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+
+                <button type="submit" class="submit-btn">C O N T I N U E ></button>
+
+                <a id="f" href="OTPValidate.html"><b>Forget Password?</b></a>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
+
+</html>

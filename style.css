@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.web{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to right,#F52887 20%,#728FCE 20%, #ffb703 20%) ;  
+     
+    /* background-image: url(image/circle.png); */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 350px;
+    height: 500px;
+    border-radius: 30px;
+    position: relative;
+    margin: 6% auto;
+    background: #ffff;
+    padding: 5px;
+    overflow: hidden;
+    float: none;
+}
+
+
+.button-box{
+    
+    width: 220px; 
+    margin: 35px;
+    position: relative;
+    /* box-shadow: 0 0 20px 9px #ff61241f; */
+    border-radius: 30px;
+}
+.toggle-button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background : transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#button{
+    top :0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 10%;
+    background :linear-gradient(to right,#728FCE,#F52887);
+    border-radius: 30px;
+    transition: 0.5s;
+    
+
+}
+.input-group{
+    top: 100px;
+    position: sticky;
+    width: 260px;
+
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    color:#ffff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-size: 12px;
+    margin: auto;
+    margin: 4px 4px;
+    background:linear-gradient(to right,#728FCE,#F52887)    
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color:#777;
+    font-size: 13px;
+    bottom: 105px;
+    /* position: absolute; */
+}
+
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 50px;
+}
+#forget{
+    left: 50px;
+}
+#f{
+    text-decoration: none;
+    font-size: 10px;
+    position: relative;
+    color: linear-gradient(#777);
+   
+    padding: 0 0 0 100px;
+}
+
+.p i {
+    margin-block: -20px;
+    cursor: pointer;
+}
